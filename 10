@@ -1,0 +1,7 @@
+import sys
+import time
+n = int(input('Введіть бажану довжину: '))
+for x in range(n):
+        sys.stdout.flush()
+        sys.stdout.write("\rProgress: " + '-' * x + ' ' + str(round((x+1) / n * 100, 2)) + '%')
+        time.sleep(0.1)
